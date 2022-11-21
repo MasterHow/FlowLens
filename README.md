@@ -1,4 +1,4 @@
-## <p align="center">FlowLens: Seeing Beyond the FoV via Flow-guided Clip-Recurrent Transformer
+### <p align="center">FlowLens: Seeing Beyond the FoV via Flow-guided Clip-Recurrent Transformer
 <br>
 <div align="center">
   <a href="https://www.researchgate.net/profile/Shi-Hao-10" target="_blank">Hao&nbsp;Shi</a> &emsp; <b>&middot;</b> &emsp;
@@ -7,7 +7,9 @@
   <a href="https://www.researchgate.net/profile/Yin-Xiaoting" target="_blank">Xiaoting&nbsp;Yin</a> &emsp; <b>&middot;</b> &emsp;
   <a href="https://www.researchgate.net/profile/Kaiwei-Wang-4" target="_blank">Kaiwei&nbsp;Wang</a>
   <br> <br>
-  <a href="https://arxiv.org/" target="_blank">Paper</a> &emsp;
+  <a href="https://arxiv.org/" target="_blank">Paper</a>
+
+[comment]: <> (<a href="https://arxiv.org/" target="_blank">Paper</a> &emsp;)
 
 [comment]: <> (  <a href="https://arxiv.org/" target="_blank">Demo Video &#40;Youtube&#41;</a> &emsp;)
 
@@ -18,7 +20,7 @@
 <p align="center">:fire: We will release code and checkpoints in the future. :fire:</p>
 <br>
 
-## Demos
+### Demos
 
 <p align="center">
     (Outer Beyond-FoV)
