@@ -51,15 +51,10 @@
    If you find our paper or repo useful, please consider citing our paper:
 
    ```bibtex
-   @misc{
-   https://doi.org/10.48550/arxiv.2211.11293,
-  doi = {10.48550/ARXIV.2211.11293},
-  url = {https://arxiv.org/abs/2211.11293},
-  author = {Shi, Hao and Jiang, Qi and Yang, Kailun and Yin, Xiaoting and Wang, Kaiwei},
-  keywords = {Computer Vision and Pattern Recognition (cs.CV), Image and Video Processing (eess.IV), FOS: Computer and information sciences, FOS: Computer and information sciences, FOS: Electrical engineering, electronic engineering, information engineering, FOS: Electrical engineering, electronic engineering, information engineering},
-  title = {FlowLens: Seeing Beyond the FoV via Flow-guided Clip-Recurrent Transformer},
-  publisher = {arXiv},
-  year = {2022},
-  copyright = {arXiv.org perpetual, non-exclusive license}
+   @article{shi2022flowlens,
+  title={FlowLens: Seeing Beyond the FoV via Flow-guided Clip-Recurrent Transformer},
+  author={Shi, Hao and Jiang, Qi and Yang, Kailun and Yin, Xiaoting and Wang, Kaiwei},
+  journal={arXiv preprint arXiv:2211.11293},
+  year={2022}
 }
    ```
