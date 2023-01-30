@@ -81,3 +81,6 @@ Extensive experiments on both video inpainting and beyond-FoV estimation tasks s
   year={2022}
 }
    ```
+
+### Contact
+Feel free to contact me if you have additional questions or have interests in collaboration. Please drop me an email at haoshi@zju.edu.cn. =)
