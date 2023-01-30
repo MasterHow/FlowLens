@@ -23,7 +23,7 @@
 <p align="center">:fire: We will release code and checkpoints in the future. :fire:</p>
 <br>
 
-<div align=center><img src="assets/flowlens.png" width="500" height="230" /></div>
+<div align=center><img src="assets/flowlens.png" width="800" height="368" /></div>
 
 ### Update
 - 2022.11.21 Release the [arXiv](https://arxiv.org/abs/2211.11293) version with supplementary materials.
