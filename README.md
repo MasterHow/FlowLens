@@ -26,13 +26,14 @@
 <div align=center><img src="assets/flowlens.png" width="800" height="368" /></div>
 
 ### Update
+- 2022.11.19 Init repository.
 - 2022.11.21 Release the [arXiv](https://arxiv.org/abs/2211.11293) version with supplementary materials.
 
 ### TODO List
 
 - [ ] Code release. 
 - [ ] KITTI360-EX release.
-- [ ] Towards higher performance with extra small costs.
+- [x] Towards higher performance with extra small costs.
 
 
 ### Abstract
@@ -68,6 +69,32 @@ Extensive experiments on both video inpainting and beyond-FoV estimation tasks s
     <img width="750" alt="Animation" src="assets/breakdance.gif"/>
 </p>
 <br><br>
+
+### Results
+#### KITTI360EX-InnerSphere
+| Method    | Test Logic | TTA | PSNR | SSIM    | VFID | Runtime (s/frame) |
+| :--------- | :----------: | :----------: | :----------: | :--------: | :---------: | :------------: |
+| _FlowLens-S (Paper)_ |_Beyond-FoV_|_wo_| _36.17_ | _0.9916_ | _0.030_ | _0.023_ |
+| FlowLens-S (This Repo) |Beyond-FoV|wo| 37.31 | 0.9926 | 0.025 | **0.015** |
+| FlowLens-S+ (This Repo) |Beyond-FoV|with| 38.36 | 0.9938 | 0.017 | 0.050 |
+| FlowLens-S (This Repo) |Video Inpainting|wo| 38.01 | 0.9938 | 0.022 | 0.042 |
+| FlowLens-S+ (This Repo) |Video Inpainting|with| **38.97** | **0.9947** | **0.015** | 0.142 |
+###
+
+#### KITTI360EX-OuterPinhole
+| Method    | Test Logic | TTA | PSNR | SSIM    | VFID | Runtime (s/frame) |
+| :--------- | :----------: | :----------: | :----------: | :--------: | :---------: | :------------: |
+| _FlowLens-S (Paper)_ |_Beyond-FoV_|_wo_| _19.68_ | _0.9247_ | _0.300_ | _0.023_ |
+| FlowLens-S (This Repo) |Beyond-FoV|wo| 20.41 | 0.9332 | 0.285 | **0.021** |
+| FlowLens-S+ (This Repo) |Beyond-FoV|with| 21.30 | 0.9397 | 0.302 | 0.056 |
+| FlowLens-S (This Repo) |Video Inpainting|wo| 21.69 | 0.9453 | **0.245** | 0.048 |
+| FlowLens-S+ (This Repo) |Video Inpainting|with| **22.40** | **0.9503** | 0.271 | 0.146 |
+
+Note that when using the ''Video Inpainting'' logic for output,
+the model is allowed to use more reference frames from the future,
+and each local frame is estimated at least twice,
+thus higher accuracy can be obtained while result in slower inference speed,
+and it is not realistic for real-world deployment.
 
 ### Citation
 
