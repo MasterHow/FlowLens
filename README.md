@@ -79,6 +79,14 @@ Extensive experiments on both video inpainting and beyond-FoV estimation tasks s
 | FlowLens-S+ (This Repo) |Beyond-FoV|with| 38.36 | 0.9938 | 0.017 | 0.050 |
 | FlowLens-S (This Repo) |Video Inpainting|wo| 38.01 | 0.9938 | 0.022 | 0.042 |
 | FlowLens-S+ (This Repo) |Video Inpainting|with| **38.97** | **0.9947** | **0.015** | 0.142 |
+
+| Method    | Test Logic | TTA | PSNR | SSIM    | VFID | Runtime (s/frame) |
+| :--------- | :----------: | :----------: | :----------: | :--------: | :---------: | :------------: |
+| _FlowLens (Paper)_ |_Beyond-FoV_|_wo_| _36.69_ | _0.9916_ | _0.027_ | _0.049_ |
+| FlowLens (This Repo) |Beyond-FoV|wo| 37.65 | 0.9927 | 0.024 | **0.033** |
+| FlowLens+ (This Repo) |Beyond-FoV|with| 38.74 | 0.9941 | 0.017 | 0.095 |
+| FlowLens (This Repo) |Video Inpainting|wo| 38.38 | 0.9939 | 0.018 | 0.086 |
+| FlowLens+ (This Repo) |Video Inpainting|with| **39.40** | **0.9950** | **0.015** | 0.265 |
 ###
 
 #### KITTI360EX-OuterPinhole
@@ -89,6 +97,14 @@ Extensive experiments on both video inpainting and beyond-FoV estimation tasks s
 | FlowLens-S+ (This Repo) |Beyond-FoV|with| 21.30 | 0.9397 | 0.302 | 0.056 |
 | FlowLens-S (This Repo) |Video Inpainting|wo| 21.69 | 0.9453 | **0.245** | 0.048 |
 | FlowLens-S+ (This Repo) |Video Inpainting|with| **22.40** | **0.9503** | 0.271 | 0.146 |
+
+| Method    | Test Logic | TTA | PSNR | SSIM    | VFID | Runtime (s/frame) |
+| :--------- | :----------: | :----------: | :----------: | :--------: | :---------: | :------------: |
+| _FlowLens (Paper)_ |_Beyond-FoV_|_wo_| _20.13_ | _0.9314_ | _0.281_ | _0.049_ |
+| FlowLens (This Repo) |Beyond-FoV|wo| 20.85 | 0.9381 | 0.259 | **0.035** |
+| FlowLens+ (This Repo) |Beyond-FoV|with| 21.65 | 0.9432 | 0.276 | 0.097 |
+| FlowLens (This Repo) |Video Inpainting|wo| 22.23 | 0.9507 | **0.231** | 0.085 |
+| FlowLens+ (This Repo) |Video Inpainting|with| **22.86** | **0.9543** | 0.253 | 0.260 |
 
 Note that when using the ''Video Inpainting'' logic for output,
 the model is allowed to use more reference frames from the future,
