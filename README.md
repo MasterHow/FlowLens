@@ -32,8 +32,9 @@
 ### Update
 - 2022.11.19 Init repository.
 - 2022.11.21 Release the [arXiv](https://arxiv.org/abs/2211.11293) version with supplementary materials.
-- 2023.04.04 Our code is publicly available.
-- 2023.04.04 Release pretrained models. 
+- 2023.04.04 :fire: Our code is publicly available.
+- 2023.04.04 :fire: Release pretrained models. 
+- 2023.04.04 :fire: Release KITTI360-EX dataset.
 
 ### TODO List
 
@@ -80,6 +81,12 @@ Extensive experiments on both video inpainting and beyond-FoV estimation tasks s
 The pretrained model can be found there:
 ```angular2html
 https://share.weiyun.com/6G6QEdaa
+```
+
+### KITTI360-EX for Beyond-FoV Estimation
+The preprocessed KITTI360-EX can be downloaded from here:
+```angular2html
+https://share.weiyun.com/BReRdDiP
 ```
 
 ### Results
