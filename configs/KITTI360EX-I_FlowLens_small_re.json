@@ -1,0 +1,49 @@
+{
+    "seed": 2023,
+    "save_dir": "release_model/",
+    "train_data_loader": {
+        "name": "KITTI360-EX",
+        "data_root": "/workspace/mnt/storage/shihao/VI/KITTI-360EX/InnerSphere",
+        "w": 336,
+        "h": 336,
+        "num_local_frames": 10,
+        "num_ref_frames": 3,
+        "random_mask": 0
+    },
+    "losses": {
+        "hole_weight": 1,
+        "valid_weight": 1,
+        "flow_weight": 1,
+        "adversarial_weight": 0.01,
+        "GAN_LOSS": "hinge"
+    },
+    "model": {
+        "net": "flowlens",
+        "no_dis": 0,
+        "spy_net": 1,
+        "mfn_teach": 1,
+        "freeze_dcn": 0,
+        "depths": 5,
+        "window_size": [7, 7],
+        "output_size": [84, 84],
+        "small_model": 1
+    },
+    "trainer": {
+        "type": "Adam",
+        "beta1": 0,
+        "beta2": 0.99,
+        "lr": 1e-4,
+        "batch_size": 1,
+        "num_workers": 4,
+        "log_freq": 100,
+        "save_freq": 5e3,
+        "iterations": 50e4,
+        "scheduler": {
+            "type": "MultiStepLR",
+            "milestones": [
+                40e4
+            ],
+            "gamma": 0.1
+        }
+    }
+}
