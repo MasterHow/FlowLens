@@ -39,7 +39,7 @@
 ### TODO List
 
 - [x] Code release. 
-- [ ] KITTI360-EX release.
+- [x] KITTI360-EX release.
 - [x] Towards higher performance with extra small costs.
 
 
@@ -76,6 +76,22 @@ Extensive experiments on both video inpainting and beyond-FoV estimation tasks s
     <img width="750" alt="Animation" src="assets/breakdance.gif"/>
 </p>
 <br><br>
+
+### Usage
+To train FlowLens(-S), use:
+```angular2html
+python train.py --config configs/KITTI360EX-I_FlowLens_small_re.json
+```
+
+To eval on KITTI360-EX, run:
+```angular2html
+python evaluate.py \
+--model flowlens \
+--cfg_path configs/KITTI360EX-I_FlowLens_small_re.json \
+--ckpt release_model/FlowLens-S_Out_500000.pth --fov fov5
+```
+
+Trun on ```--reverse``` for test time augmentation (TTA).
 
 ### Pretrained Models
 The pretrained model can be found there:
