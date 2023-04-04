@@ -77,6 +77,14 @@ Extensive experiments on both video inpainting and beyond-FoV estimation tasks s
 </p>
 <br><br>
 
+### Dependencies
+This repo has been tested in the following environment:
+```angular2html
+torch == 1.10.2
+cuda == 11.3
+mmflow == 0.5.2
+```
+
 ### Usage
 To train FlowLens(-S), use:
 ```angular2html
@@ -91,7 +99,9 @@ python evaluate.py \
 --ckpt release_model/FlowLens-S_Out_500000.pth --fov fov5
 ```
 
-Trun on ```--reverse``` for test time augmentation (TTA).
+Turn on ```--reverse``` for test time augmentation (TTA).
+
+Trun on ```--save_results``` to save your output.
 
 ### Pretrained Models
 The pretrained model can be found there:
