@@ -18,10 +18,14 @@
 
 [comment]: <> (  <a href="https://arxiv.org/" target="_blank">演示视频 &#40;B站&#41;</a> &emsp;)
 </div>
-<br>
-<p align="center">:hammer_and_wrench: :construction_worker: :rocket:</p>
-<p align="center">:fire: We will release code and checkpoints in the future. :fire:</p>
-<br>
+
+[comment]: <> (<br>)
+
+[comment]: <> (<p align="center">:hammer_and_wrench: :construction_worker: :rocket:</p>)
+
+[comment]: <> (<p align="center">:fire: We will release code and checkpoints in the future. :fire:</p>)
+
+[comment]: <> (<br>)
 
 <div align=center><img src="assets/flowlens.png" width="800" height="368" /></div>
 
