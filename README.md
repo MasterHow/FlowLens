@@ -32,7 +32,7 @@
 
 ### TODO List
 
-- [ ] Code release. 
+- [x] Code release. 
 - [ ] KITTI360-EX release.
 - [x] Towards higher performance with extra small costs.
 
