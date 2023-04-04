@@ -32,7 +32,8 @@
 ### Update
 - 2022.11.19 Init repository.
 - 2022.11.21 Release the [arXiv](https://arxiv.org/abs/2211.11293) version with supplementary materials.
-- 2023.04.04 Release code.
+- 2023.04.04 Our code is publicly available.
+- 2023.04.04 Release pretrained models. 
 
 ### TODO List
 
@@ -74,6 +75,12 @@ Extensive experiments on both video inpainting and beyond-FoV estimation tasks s
     <img width="750" alt="Animation" src="assets/breakdance.gif"/>
 </p>
 <br><br>
+
+### Pretrained Models
+The pretrained model can be found there:
+```angular2html
+https://share.weiyun.com/6G6QEdaa
+```
 
 ### Results
 #### KITTI360EX-InnerSphere
