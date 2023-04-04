@@ -169,6 +169,14 @@ and it is not realistic for real-world deployment.
   year={2022}
 }
    ```
+### Acknowledgement
+This project would not have been possible without the following outstanding repositories:
+
+[STTN](https://github.com/researchmm/STTN), [MMFlow](https://github.com/open-mmlab/mmflow)
+
+
+### Devs
+Hao Shi
 
 ### Contact
 Feel free to contact me if you have additional questions or have interests in collaboration. Please drop me an email at haoshi@zju.edu.cn. =)
