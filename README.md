@@ -96,7 +96,7 @@ To eval on KITTI360-EX, run:
 python evaluate.py \
 --model flowlens \
 --cfg_path configs/KITTI360EX-I_FlowLens_small_re.json \
---ckpt release_model/FlowLens-S_Out_500000.pth --fov fov5
+--ckpt release_model/FlowLens-S_re_Out_500000.pth --fov fov5
 ```
 
 Turn on ```--reverse``` for test time augmentation (TTA).
