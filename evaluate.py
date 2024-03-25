@@ -175,6 +175,9 @@ def main_worker(args):
         model.load_state_dict(data)
         print(f'Loading from: {args.ckpt}')
 
+    # # half
+    # model = model.half()
+
     model.eval()
 
     total_frame_psnr = []
@@ -193,6 +196,7 @@ def main_worker(args):
         ckpt = args.ckpt.split('/')[-1]
     else:
         ckpt = 'random'
+
     if args.fov is not None:
         if args.reverse:
             result_path = os.path.join('results', f'{args.model}+_{ckpt}_{args.fov}_{args.dataset}')
@@ -203,6 +207,18 @@ def main_worker(args):
             result_path = os.path.join('results', f'{args.model}+_{ckpt}_{args.dataset}')
         else:
             result_path = os.path.join('results', f'{args.model}_{ckpt}_{args.dataset}')
+
+    # if args.fov is not None:
+    #     if args.reverse:
+    #         result_path = os.path.join('/workspace/mnt/storage/shihao/BEV_Flow/tmp', f'{args.model}+_{ckpt}_{args.fov}_{args.dataset}')
+    #     else:
+    #         result_path = os.path.join('/workspace/mnt/storage/shihao/BEV_Flow/tmp', f'{args.model}_{ckpt}_{args.fov}_{args.dataset}')
+    # else:
+    #     if args.reverse:
+    #         result_path = os.path.join('/workspace/mnt/storage/shihao/BEV_Flow/tmp', f'{args.model}+_{ckpt}_{args.dataset}')
+    #     else:
+    #         result_path = os.path.join('/workspace/mnt/storage/shihao/BEV_Flow/tmp', f'{args.model}_{ckpt}_{args.dataset}')
+
     if not os.path.exists(result_path):
         os.makedirs(result_path)
     eval_summary = open(
@@ -221,6 +237,10 @@ def main_worker(args):
                 pass
 
         frames, masks, video_name, frames_PIL = items
+
+        # # half
+        # frames = frames.half()
+        # masks = masks.half()
 
         video_length = frames.size(1)
         frames, masks = frames.to(device), masks.to(device)
